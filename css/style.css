@@ -1,0 +1,95 @@
+.body{
+
+
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(38, 179, 171);   
+
+        
+
+
+}
+.section{
+background-color: honeydew;
+padding: 1cm;
+margin: 1cm;
+border-radius: 10px;
+}
+main{
+
+width: 900px;
+max-width: 90%;
+margin: 0 auto;
+}
+.top-players, .blogs {
+    display: grid;
+    grid-gap:30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.top-players{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+
+grid-template-columns: repeat(2,1fr);
+
+}
+.player, .blog{
+
+    display: flex;
+    text-align: center;
+}
+.player img{
+
+    height: 50px;
+    margin-right: 20px;
+
+}
+
+.thumbil img{
+
+width: 200px;
+margin-right: 20px;
+}
+.filled{
+    color: goldenrod;
+}    
+.coure-info{
+display: inline-flex;
+
+}
+
+.course img{
+
+height: 150px;
+width: 200px;
+
+}
+@media(max-width:992px){
+    .top-players{
+     
+        grid-template-columns: repeat(2, 1fr);
+     
+    }
+    .blogs{
+
+        grid-template-columns: repeat(1,1fr);
+        
+        }
+}
+
+}
+@media(max-width:688px){
+    .top-players{
+     
+        grid-template-columns: repeat(1, 1fr);
+     
+    }
+  .blog{
+
+        display:block;
+  
+    }
+}
+
